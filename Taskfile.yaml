@@ -1,0 +1,10 @@
+version: '3'
+
+tasks:
+    install:
+        desc: Install the project
+        cmds:
+            - composer install
+            - php bin/console d:d:c
+            - php bin/console d:s:u -f
+            - php bin/console app:fixtures
